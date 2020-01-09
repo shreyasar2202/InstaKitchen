@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">InstaKitchen</string>
+    <string name="pantry">Pantry</string>
+    <string name="recipe">Recipe</string>
+    <string name="shopping">Shopping  List    </string>
+    <string name="search">Search</string>
+    <string name="favourites">Favourites</string>
+    <string name="recipe_search_hint">Seacrh for Recipe</string>
+    <string name="item">Item</string>
+    <string name="logout">Logout</string>
+    <string name="no_internet_connection">No internet connection.</string>
+    <string name="no_results">No results found.</string>
+    <string-array name="item_name">
+        <item>Rice</item>
+        <item>Wheat</item>
+        <item>Sugar</item>
+        <item>Ragi</item>
+        <item>Coffee</item>
+        <item>Mustard</item>
+        <item>Maize</item>
+        <item>Corn Flour</item>
+        <item>Jeera</item>
+        <item>Tea</item>
+        <item>Bacon</item>
+        <item>Garam Masala</item>
+    </string-array>
+    <string-array name="quantity">
+        <item>1000</item>
+        <item>500</item>
+        <item>200</item>
+        <item>800</item>
+        <item>150</item>
+        <item>200</item>
+        <item>350</item>
+        <item>650</item>
+        <item>300</item>
+        <item>400</item>
+        <item>200</item>
+        <item>400</item>
+    </string-array>
+    <string-array name="spices">
+        <item>Black Pepper</item>
+        <item>Cardamom</item>
+        <item>Cinnamon</item>
+        <item>Clove</item>
+        <item>Corriander Seeds</item>
+        <item>Cumin</item>
+    </string-array>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+
+    <string name="action_insert_dummy_data">Insert Dummy Data</string>
+
+    <string name="action_delete_all_entries">Delete all recipes</string>
+
+    <string name="empty_view_title_text">No Recipes to show</string>
+
+    <!-- Label for editor overflow menu option that deletes the current pet [CHAR LIMIT=20] -->
+    <string name="action_delete">Delete</string>
+
+    <string name="recipe_activity_title">Recipe</string>
+
+    <!-- Dialog message to ask the user to confirm deleting the current pet [CHAR LIMIT=NONE] -->
+    <string name="delete_dialog_msg">Delete recipe from Favourites?</string>
+
+    <!-- Dialog button text for the option to confirm deleting the current pet [CHAR LIMIT=20] -->
+    <string name="delete">Delete</string>
+
+    <!-- Dialog button text for the option to cancel deletion of the current pet [CHAR LIMIT=20] -->
+    <string name="cancel">Cancel</string>
+
+    <!-- Toast message in editor when current pet was successfully deleted [CHAR LIMIT=NONE] -->
+    <string name="editor_delete_pet_successful">Recipe deleted</string>
+
+    <!-- Toast message in editor when current pet has failed to be deleted [CHAR LIMIT=NONE] -->
+    <string name="editor_delete_pet_failed">Error with deleting recipe</string>
+
+
+</resources>

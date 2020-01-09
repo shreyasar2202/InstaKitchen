@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:weightSum="1"
+        tools:context="com.example.kitchen.instakitchen.SpiceList">
+
+        <LinearLayout
+            android:id="@+id/spiceHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/SpicesList"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:text="Spices" />
+
+            <ImageView
+                android:id="@+id/icon_list"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:src="@drawable/bulleted_list" />
+
+            <ImageView
+
+                android:id="@+id/icon_grid"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:src="@drawable/grid_icon" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/maxQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:gravity="end"
+            android:padding="5dp"
+            android:text="Max quantity = 500g"
+            android:textStyle="normal" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ListView
+                android:id="@+id/spicesListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dividerHeight="0dp">
+            </ListView>
+
+            <!-- Empty view for the list -->
+            <TextView
+                android:id="@+id/spice_list_empty_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Nothing to show yet!"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--<ProgressBar-->
+    <!--android:id="@+id/spice_loading_indicator"-->
+    <!--style="@style/Widget.AppCompat.ProgressBar"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:theme="@style/CircularProgress"-->
+    <!--android:visibility="invisible"-->
+    <!--/>-->
+</RelativeLayout>

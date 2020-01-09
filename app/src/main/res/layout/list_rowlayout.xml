@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/spice_image"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/black_pepper" />
+
+    <TextView
+        android:id="@+id/spice_name"
+        style="@style/SpicesList"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_weight="1.5"
+        android:text="Black Pepper"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:textColor="#000000" />
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="70dp">
+        <ProgressBar
+            android:id="@+id/spice_quantity"
+            style="@android:style/Widget.DeviceDefault.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:layout_below="@+id/spice_quantity"
+            android:layout_alignRight="@+id/spice_quantity"
+            android:layout_alignEnd="@+id/spice_quantity"
+            android:id="@+id/spice_quantity_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="Text View"
+            android:textSize="12sp"
+            android:textColor="#000000"/>
+    </RelativeLayout>
+</LinearLayout>

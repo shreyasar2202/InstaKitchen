@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.kitchen.instakitchen.MainActivity">
+
+
+    <TextView
+        android:id="@+id/pantry_tv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.8"
+        android:background="@drawable/pantry_image"
+        android:gravity="center"
+        android:text="@string/pantry"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="4dp"
+        style="@style/page_text"
+        android:textSize="48sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/recipe_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/recipe_2"
+            android:text="@string/recipe"
+            android:paddingTop="30dp"
+            android:paddingLeft="30dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="2dp"
+            style="@style/page_text"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/shoplist_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shop_3"
+            android:paddingTop="30dp"
+            android:paddingRight="20dp"
+            android:text="@string/shopping"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="2dp"
+            android:gravity="right"
+            style="@style/page_text"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+
+</LinearLayout>
