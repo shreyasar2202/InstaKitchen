@@ -12,7 +12,7 @@ import android.widget.TextView;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
-FirebaseAuth firebaseAuth;
+    FirebaseAuth firebaseAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         firebaseAuth = FirebaseAuth.getInstance();
@@ -48,11 +48,11 @@ FirebaseAuth firebaseAuth;
                 startActivity(i);
             }
         });
-
-
-
+        
+        
+        
     }
-
+    
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu options from the res/menu/menu_catalog.xml file.
@@ -65,7 +65,7 @@ FirebaseAuth firebaseAuth;
     {
         // User clicked on a menu option in the app bar overflow menu
         switch (item.getItemId()) {
-            // Respond to a click on the "Insert dummy data" menu option
+                // Respond to a click on the "Insert dummy data" menu option
             case R.id.logout:
                 // Do nothing for now
                 firebaseAuth.signOut();
@@ -73,13 +73,13 @@ FirebaseAuth firebaseAuth;
                 finish();
                 //starting login activity
                 startActivity(new Intent(this, LoginActivity.class));
-
+                
                 return true;
-
+                
         }
         return super.onOptionsItemSelected(item);
     }
-
-
-
+    
+    
+    
 }
